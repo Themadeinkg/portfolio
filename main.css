@@ -1,0 +1,480 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+header{
+background-image: url(./images/bg.jpg);
+background-size: cover;
+width: 100%;
+height: 910px;
+}
+.container2{
+    width: 40%;
+    margin-top: 1%;
+    margin-left: 60%;
+    
+    
+}
+.container2 ul{
+    display: flex;
+    justify-content: space-around;
+}
+ .list{
+     list-style: none;
+     }
+.container2 a{
+    text-decoration: none;
+}
+.imageslogo{
+    margin-left:  30px;
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    transition: 0,1s;
+
+}
+.imageslogo:hover{
+     filter: invert(26%) sepia(15%) saturate(638%)hue-rotate(7deg) brightness(92%)contrast(87%); }
+.list{
+    color: white;
+    font-size: 20px;
+    
+}
+.list:hover{
+    color: #BDAE82;
+    transition: 0.5s;
+}
+
+.container{
+    
+    list-style: none;
+    display: flex;
+    text-align: justify;
+    padding-top: 2%;
+    
+} 
+
+
+
+.container3{
+    width: 30%;
+margin-left: 5%;
+margin-top: 10%;
+}
+
+.text{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 120px;
+    font-style: normal;
+    color: white;
+}
+
+.text2{
+    font-size: 20px;
+    color: white;
+    line-height: 40px;
+}
+
+
+
+.button{
+    width: 220px;
+    height: 55px;
+    border: solid 1px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #BDAE82;
+    margin-top: 5%;
+    color: black;
+}
+.button:hover{
+    color: white;
+}
+
+
+
+.section{
+background-color: black;
+width: 100%;
+height: 482px;
+}
+
+.title {
+    /* Чтобы спрятать часть линий, которые 
+    ** будут вылазить за пределы блока */
+    overflow: hidden;
+    /* Выравнивание заголовка по центру, 
+    ** можно использовать left, right */
+    text-align: center;
+    /* Тут можно добавить другие стили для заголовка */
+    font-size: 50px;
+    padding-top: 5%;
+}
+.title span {
+    /* Стили тега обертки для заголовков 
+    ** в несколько строк */
+    display: inline-block;
+    vertical-align: middle;
+    color: #BDAE82;
+}
+.title:before,
+.title:after {
+    /* Обязательно указываем пустое свойство content, 
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    /* Указываем что наши линии будут строчно-блочные и 
+    ** выравнивание по высоте - по центру */
+    display: inline-block;
+    vertical-align: middle;
+    /* Задаем ширину 100% и выбираем высоту линии, 
+    ** в нашем примере она равна 4 пикселям */
+    width: 20%;
+    height: 2px;
+    /* Добавляем цвет для линии */
+    background-color: #BDAE82;
+    /* Добавляем пседоэлемантам возможность изменить 
+    ** позицию линии, для создания отступов от текста */
+    position: relative;
+}
+.title:before {
+    /* Смещаем левую линию на 100% влево, чтобы линия 
+    ** встала рядом с текстом слева */
+    margin-left: -30%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    left: -14px;
+}
+.title:after {
+    /* Смещаем правую линию на 100% вправо, чтобы 
+    ** линия встала рядом с текстом справа */
+    margin-right: -30%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    right: -14px;
+}
+
+.features{
+    width: 100%;
+    color: white;
+    
+    display: flex;
+    margin-top: 5%;
+    
+}
+.features_item{
+width: 25%;
+text-align: center;
+padding: 0 40px;
+
+}
+.features_icon{
+    margin-bottom: 10%;
+
+}
+.features_title{
+    font-weight: 700;
+    font-size: 20px;
+}
+.features_text{
+    margin-top: 10%;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.section2{
+background-color: black;
+width: 100%;
+height: 1500px;
+}
+
+.title2 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 5%;
+}
+.title2 span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #BDAE82;
+}
+.title2:before,
+.title2:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 18%;
+    height: 2px;
+    background-color: #BDAE82;
+    position: relative;
+}
+.title2:before {
+    margin-left: -30%;
+    left: -14px;
+}
+.title2:after {
+    margin-right: -30%;
+    right: -14px;
+}
+.boxbtn{
+    margin-left: 20% ;
+    margin-top: 5%;
+}
+.button2{
+    width: 220px;
+    height: 55px;
+    background: black;
+    color:  #BDAE82;
+    border: 1px solid  #BDAE82;
+    font-size: 20px;
+    font-weight: 400;
+    ;
+}
+.button2:hover{
+    background-color: #BDAE82;
+    color: black;
+}
+.photo{
+    margin: 5% 5% ;
+    
+}
+
+.img{
+    width: 450px;
+}
+
+.title3 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 5%;
+}
+.title3 span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #BDAE82;
+}
+.title3:before,
+.title3:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 18%;
+    height: 2px;
+    background-color: #BDAE82;
+    position: relative;
+}
+.title3:before {
+    margin-left: -30%;
+    left: -14px;
+}
+.title3:after {
+    margin-right: -30%;
+    right: -14px;
+}
+
+.section3{
+    background-color: black;
+    width: 100%;
+}
+.videobox{
+    background-image: url(./images/video-player.jpg);
+    background-size: cover;
+    width: 96%;
+    height: 705px;
+    margin-left: 2%;
+   
+    }
+    .videobox{
+        margin-top: 7%;
+       
+    }
+    .img2{
+        padding-left: 45%;
+    
+    }
+    .img2{
+        padding-top: 20%;
+    }
+    .img2:hover{
+        filter: invert(26%) sepia(15%) saturate(638%)hue-rotate(7deg) brightness(92%)contrast(87%);
+}
+
+    .section4{
+        width: 100%;
+        height: 800px;
+        background-color: black;
+    }
+
+    .title4 {
+        overflow: hidden;
+        text-align: center;
+        font-size: 50px;
+        padding-top: 5%;
+    }
+    .title4 span {
+        display: inline-block;
+        vertical-align: middle;
+        color: #BDAE82;
+    }
+    .title4:before,
+    .title4:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 18%;
+        height: 2px;
+        background-color: #BDAE82;
+        position: relative;
+    }
+    .title4:before {
+        margin-left: -30%;
+        left: -14px;
+    }
+    .title4:after {
+        margin-right: -30%;
+        right: -14px;
+    }
+    
+    .boxprice{
+        display: flex;
+        flex-direction: row;
+        padding-left: 2%;
+        padding-top: 5%;
+        
+    }
+    .boxprice2{
+        width: 30%;
+        height: 505px;
+        border: 1px solid #BDAE82;
+        margin-left: 2%;
+        color: white;
+        text-align: center;
+    }
+    .h2{
+        font-size: 28px;
+        padding-top: 10%;
+        
+    }
+    .p500{
+        font-size: 24px;
+        line-height: 70px;
+        padding-top: 10%;
+    }
+
+    .info{
+        font-size: 18px;
+        line-height: 36px;
+        
+        
+    }
+    .boxprice2 button{
+        width: 220px;
+        height: 55px;
+        background-color: #BDAE82;
+        margin-top: 10%;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .boxprice2 button:hover{
+        background-color: black;
+        color: #BDAE82;
+    }
+    .section5{
+        background-image: url(images/contacts.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+    }
+    .cme{
+        display: flex;
+        flex-direction: column;
+        margin-left: 65%;
+        padding-top: 5%;
+        color: #BDAE82;
+        
+        
+    }
+    .Eph{
+        width: 450px;
+        height: 50px;
+        margin-top: 2%;
+        background: none;
+        font-size: 20px;
+        border: solid 1px #BDAE82;
+        color: #BDAE82;
+        
+        
+    }
+    
+    .Message{
+        width: 450px;
+        height: 100px;
+        margin-top: 2%;
+        background: none;
+        border: solid 1px #BDAE82;
+        font-size: 20px;
+        color: #BDAE82;
+
+    }
+    .button3{
+        width: 220px;
+        height: 55px;  
+        background: none; 
+        font-size: 20px;
+        color: #BDAE82;
+        
+    }
+    .button3:hover{
+        background-color: #BDAE82 ;
+        color: black  ;
+    }
+   .button3{
+    margin-top: 5%;
+   }
+    .Contact{
+        font-size: 40px;
+        font-weight: 700;
+        color: #BDAE82;
+        line-height: 80px;
+    }
+
+
+    .fter{
+        background-color: black;
+        width: 100%;
+        height: 120px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        
+}
+.end{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+}
+
+.dvim{
+    /* margin-left: 85%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+}
+.dvim img{
+    width: 26px;
+    height: 26px;
+}
+
+
+.svg:hover{
+        filter: invert(26%) sepia(15%) saturate(638%)hue-rotate(7deg) brightness(92%)contrast(87%);
+}
+
+.end2:hover{
+    filter: invert(26%) sepia(15%) saturate(638%)hue-rotate(7deg) brightness(92%)contrast(87%);
+}
